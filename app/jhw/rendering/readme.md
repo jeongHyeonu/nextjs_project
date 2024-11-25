@@ -3,10 +3,13 @@
 
 Client Side Rendering
 
-[예제 코드](https://github.com/jeongHyeonu/nextjs_project/blob/main/app/jhw/csr/page.tsx)
+[예제 코드](https://github.com/jeongHyeonu/nextjs_project/blob/main/app/jhw/rendering/csr/page.tsx)
+
+구현 방법 :
+- "use client" 이용 
+- react 훅을 이용
 
 장점 :
-
  - 필요한 부분만 가져오기 때문에 렌더링 속도가 빠름
  - data 요청이 있을 때만 서버에 요청하기 때문에 초기 이후에 구동속도가 빠르고, 서버에 부담↓
  - 클라이언트 측에서 라우팅과 연산을 처리해 반응속도가 빠르고 UX 우수
@@ -18,7 +21,7 @@ Client Side Rendering
 
 Server Side Rendering
 
-[예제 코드](https://github.com/jeongHyeonu/nextjs_project/blob/main/app/jhw/ssr/page.tsx)
+[예제 코드](https://github.com/jeongHyeonu/nextjs_project/blob/main/app/jhw/rendering/ssr/page.tsx)
 
 장점
 - SEO 성능 ↑
@@ -32,7 +35,7 @@ Server Side Rendering
 
 Static site Generation
 
-[예제 코드](https://github.com/jeongHyeonu/nextjs_project/blob/main/app/jhw/ssg/page.tsx)
+[예제 코드](https://github.com/jeongHyeonu/nextjs_project/blob/main/app/jhw/rendering/ssg/page.tsx)
 
 
 빌드 시점에 페이지 생성
@@ -50,7 +53,7 @@ Static site Generation
 
 Incremental Static Regeneration
 
-[예제 코드](https://github.com/jeongHyeonu/nextjs_project/blob/main/app/jhw/isr/page.tsx)
+[예제 코드](https://github.com/jeongHyeonu/nextjs_project/blob/main/app/jhw/rendering/isr/page.tsx)
 
 빌드 시점에 페이지 생성은 SSR과 동일하지만, SSR과 다르게 일정 시간 후 페이지를 새로 생성
 
