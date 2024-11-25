@@ -3,6 +3,8 @@
 
 Client Side Rendering
 
+[예제 코드](https://github.com/jeongHyeonu/nextjs_project/blob/main/app/jhw/csr/page.tsx)
+
 장점 :
 
  - 필요한 부분만 가져오기 때문에 렌더링 속도가 빠름
@@ -16,23 +18,39 @@ Client Side Rendering
 
 Server Side Rendering
 
+[예제 코드](https://github.com/jeongHyeonu/nextjs_project/blob/main/app/jhw/ssr/page.tsx)
+
+장점
+- SEO 성능 ↑
+- 서버 요청이므로 보안에 우수 
+- 
 단점 :
  - 서버 부하 ↑
 - 페이지를 요청할 때마다 새로고침이되어 사용자 경험(UX)이 다소 떨어짐
 
-# SSR
+# SSG
 
 Static site Generation
 
+[예제 코드](https://github.com/jeongHyeonu/nextjs_project/blob/main/app/jhw/ssg/page.tsx)
+
+
 빌드 시점에 페이지 생성
 
-장점 : 
-- SEO가 굉장히 좋다
-- 렌더링속도가 빠르다
+**기본적으로 next.js는 SSG 방식으로 렌더링한다!**
 
+장점 : 
+- SEO가 굉장히 좋음
+- 렌더링속도가 빠름
+
+단점 :
+- 동적인 데이터 제공 X
+  
 # ISR
 
 Incremental Static Regeneration
+
+[예제 코드](https://github.com/jeongHyeonu/nextjs_project/blob/main/app/jhw/isr/page.tsx)
 
 빌드 시점에 페이지 생성은 SSR과 동일하지만, SSR과 다르게 일정 시간 후 페이지를 새로 생성
 
